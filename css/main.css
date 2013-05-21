@@ -100,18 +100,59 @@ body {
 .header .page_width {
   background: #000000;
 }
+.header .page_width .logo {
+  margin: 10px;
+}
+.header .page_width .menu_trigger {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .header .page_width .menu_trigger {
+    display: none;
+  }
+}
+.header .page_width .menu_trigger ul {
+  list-style: none;
+}
+.header .page_width .menu_trigger ul li {
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 10px;
+  -moz-background-clip: padding;
+  border-radius: 10px;
+  background-clip: padding-box;
+  width: 50px;
+  height: 4px;
+  margin-top: 3px;
+}
 .header .page_width .menu {
-  display: table;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .header .page_width .menu {
+    display: table !important;
+  }
 }
 .header .page_width .menu ul {
   list-style: none;
-  display: table-row;
+}
+@media only screen and (min-width: 768px) {
+  .header .page_width .menu ul {
+    display: table-row;
+  }
 }
 .header .page_width .menu ul a {
   color: #fff;
 }
-.header .page_width .menu ul a li {
-  display: table-cell;
+@media only screen and (min-width: 768px) {
+  .header .page_width .menu ul a li {
+    display: table-cell;
+  }
 }
 .content {
   background: none;

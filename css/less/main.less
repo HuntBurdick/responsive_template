@@ -110,18 +110,45 @@ body {
     width:100%;
     .page_width {
         background: @header_page_background;
-        img {
-
+        .logo {
+            margin:10px;
         }
-        .menu {
-            display: table;
+        .menu_trigger {
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            @media @breakpoint_768 {
+                display: none;
+            }
             ul {
                 list-style: none;
-                display: table-row;
+                li {
+                    background: #fff;
+                    .border-radius(10px);
+                    width: 50px;
+                    height: 4px;
+                    margin-top:3px;
+                }
+            }
+        }
+        .menu {
+            display: none;
+            @media @breakpoint_768 {
+                display: table !important;
+            }
+            ul {
+                list-style: none;
+                @media @breakpoint_768 {
+                    display: table-row;
+                }
                 a {
                     color:#fff;
                     li {
-                        display: table-cell;
+                        @media @breakpoint_768 {
+                            display: table-cell;
+                        }
                     }
                 }
             }
