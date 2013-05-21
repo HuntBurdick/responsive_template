@@ -62,12 +62,23 @@ fieldset {
 textarea {
   resize: vertical;
 }
+a {
+  text-decoration: none;
+}
+ul,
+li,
+a,
+p {
+  margin: 0;
+  padding: 0;
+}
 /* ==========================================================================
    WebsiteScenes base style additions to html5 boilerplate
    ========================================================================== */
 .page_width {
   max-width: 900px;
   padding: 0px 16px;
+  background: #ffffff;
   margin: 0 auto;
 }
 *,
@@ -83,15 +94,32 @@ body {
   width: 100%;
 }
 .header {
-  background: #ddd;
+  background: none;
   width: 100%;
 }
+.header .page_width {
+  background: #000000;
+}
+.header .page_width .menu {
+  display: table;
+}
+.header .page_width .menu ul {
+  list-style: none;
+  display: table-row;
+}
+.header .page_width .menu ul a {
+  color: #fff;
+}
+.header .page_width .menu ul a li {
+  display: table-cell;
+}
 .content {
-  background: #fff;
+  background: none;
   width: 100%;
 }
 .content .page_width {
   display: table;
+  background: #ffffff;
 }
 .content .page_width .page_row {
   display: table-row;
@@ -100,17 +128,21 @@ body {
   display: table-cell;
   width: 30%;
   padding: 16px;
-  background: #000000;
+  background: none;
 }
 .content .page_width .page_row .content_right {
   display: table-cell;
   width: 70%;
   padding: 16px;
-  background: #666666;
+  background: none;
 }
 .footer {
-  background: #ddd;
+  background: none;
   width: 100%;
+  color: #fff;
+}
+.footer .page_width {
+  background: #000000;
 }
 /* ==========================================================================
    Chrome Frame prompt

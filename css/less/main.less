@@ -73,12 +73,23 @@ textarea {
     resize: vertical;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul, li, a, p {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* ==========================================================================
    WebsiteScenes base style additions to html5 boilerplate
    ========================================================================== */
 .page_width {
     max-width: @page_width;
     padding:0px @page_padding;
+    background: @page_background;
     margin:0 auto;
 }
 
@@ -90,41 +101,65 @@ textarea {
  }
 
 body {
-    background: #ff0000;
+    background: @body_background;
     width:100%;
 }
 
 .header{
-    background: #ddd;
+    background: @header_background;
     width:100%;
+    .page_width {
+        background: @header_page_background;
+        img {
+
+        }
+        .menu {
+            display: table;
+            ul {
+                list-style: none;
+                display: table-row;
+                a {
+                    color:#fff;
+                    li {
+                        display: table-cell;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .content {
-    background: #fff;
+    background: @content_background;
     width:100%;
     .page_width{
         display: table;
+        background: @content_page_background;
         .page_row {
             display: table-row;
             .content_left {
                 display: table-cell;
                 width: @content_left_width;
                 padding: @content_left_padding;
-                background: #000000;
+                background: @content_left_background;
             }
             .content_right {
                 display: table-cell;
                 width: @content_right_width;
                 padding: @content_right_padding;
-                background: #666666;
+                background: @content_right_background;
             }
         }
     }
 }
 
 .footer {
-    background: #ddd;
+    background: @footer_background;
     width: 100%;
+    color: #fff;
+    .page_width {
+        background: @footer_page_background;
+    }
 }
 
 /* ==========================================================================
