@@ -73,9 +73,10 @@ p {
   padding: 0;
 }
 /* ==========================================================================
-   WebsiteScenes base style additions to html5 boilerplate
+   base style additions to html5 boilerplate
    ========================================================================== */
 .page_width {
+  width: 100%;
   max-width: 900px;
   padding: 0px 16px;
   background: #ffffff;
