@@ -134,24 +134,32 @@ body {
                 }
             }
         }
-        .menu {
-            display: none;
+    }
+}
+
+.menu {
+    display: none;
+    background: @menu_background;
+    width:100%;
+    margin:0 auto;
+    @media @breakpoint_768 {
+        display: table !important;
+    }
+    .page_width {
+        background: @menu_page_background;
+        width: 100%;
+        ul {
+            list-style: none;
             @media @breakpoint_768 {
-                display: table !important;
+                display: table-row;
             }
-            ul {
-                list-style: none;
+            a {
+                color:#fff;
                 @media @breakpoint_768 {
-                    display: table-row;
+                    display: table-cell;
                 }
-                a {
-                    color:#fff;
-                    @media @breakpoint_768 {
-                        display: table-cell;
-                    }
-                    li {
-                        padding:5px;
-                    }
+                li {
+                    padding:5px;
                 }
             }
         }

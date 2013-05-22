@@ -131,31 +131,38 @@ body {
   height: 4px;
   margin-top: 3px;
 }
-.header .page_width .menu {
+.menu {
   display: none;
+  background: none;
+  width: 100%;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
-  .header .page_width .menu {
+  .menu {
     display: table !important;
   }
 }
-.header .page_width .menu ul {
+.menu .page_width {
+  background: #003ff4;
+  width: 100%;
+}
+.menu .page_width ul {
   list-style: none;
 }
 @media only screen and (min-width: 768px) {
-  .header .page_width .menu ul {
+  .menu .page_width ul {
     display: table-row;
   }
 }
-.header .page_width .menu ul a {
+.menu .page_width ul a {
   color: #fff;
 }
 @media only screen and (min-width: 768px) {
-  .header .page_width .menu ul a {
+  .menu .page_width ul a {
     display: table-cell;
   }
 }
-.header .page_width .menu ul a li {
+.menu .page_width ul a li {
   padding: 5px;
 }
 .content {
