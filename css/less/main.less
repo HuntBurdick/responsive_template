@@ -146,10 +146,11 @@ body {
                 }
                 a {
                     color:#fff;
+                    @media @breakpoint_768 {
+                        display: table-cell;
+                    }
                     li {
-                        @media @breakpoint_768 {
-                            display: table-cell;
-                        }
+                        padding:5px;
                     }
                 }
             }
@@ -162,6 +163,8 @@ body {
     width:100%;
     .page_width{
         display: table;
+        width: @page_width;
+        padding:0px;
         background: @content_page_background;
         .page_row {
             display: table-row;

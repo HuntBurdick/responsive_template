@@ -151,9 +151,12 @@ body {
   color: #fff;
 }
 @media only screen and (min-width: 768px) {
-  .header .page_width .menu ul a li {
+  .header .page_width .menu ul a {
     display: table-cell;
   }
+}
+.header .page_width .menu ul a li {
+  padding: 5px;
 }
 .content {
   background: none;
@@ -161,6 +164,8 @@ body {
 }
 .content .page_width {
   display: table;
+  width: 900px;
+  padding: 0px;
   background: #ffffff;
 }
 .content .page_width .page_row {
