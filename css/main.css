@@ -170,21 +170,26 @@ body {
   width: 100%;
 }
 .content .page_width {
-  display: table;
-  width: 900px;
   padding: 0px;
   background: #ffffff;
 }
-.content .page_width .page_row {
-  display: table-row;
+.content .page_width .page_table {
+  display: table;
+  width: 100%;
+  max-width: 900px;
 }
-.content .page_width .page_row .content_left {
+.content .page_width .page_table .page_row {
+  display: table-row;
+  width: 100%;
+  max-width: 900px;
+}
+.content .page_width .page_table .page_row .content_left {
   display: table-cell;
   width: 30%;
   padding: 16px;
   background: none;
 }
-.content .page_width .page_row .content_right {
+.content .page_width .page_table .page_row .content_right {
   display: table-cell;
   width: 70%;
   padding: 16px;

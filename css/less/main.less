@@ -170,23 +170,28 @@ body {
     background: @content_background;
     width:100%;
     .page_width{
-        display: table;
-        width: @page_width;
         padding:0px;
         background: @content_page_background;
-        .page_row {
-            display: table-row;
-            .content_left {
-                display: table-cell;
-                width: @content_left_width;
-                padding: @content_left_padding;
-                background: @content_left_background;
-            }
-            .content_right {
-                display: table-cell;
-                width: @content_right_width;
-                padding: @content_right_padding;
-                background: @content_right_background;
+        .page_table {
+            display: table;
+            width:100%;
+            max-width: @page_width;
+            .page_row {
+                display: table-row;
+                width: 100%;
+                max-width: @page_width;
+                .content_left {
+                    display: table-cell;
+                    width: @content_left_width;
+                    padding: @content_left_padding;
+                    background: @content_left_background;
+                }
+                .content_right {
+                    display: table-cell;
+                    width: @content_right_width;
+                    padding: @content_right_padding;
+                    background: @content_right_background;
+                }
             }
         }
     }
