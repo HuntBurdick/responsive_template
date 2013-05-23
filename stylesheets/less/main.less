@@ -173,24 +173,34 @@ body {
         padding:0px;
         background: @content_page_background;
         .page_table {
-            display: table;
             width:100%;
             max-width: @page_width;
+            @media @breakpoint_768 {
+                display: table;
+            }
             .page_row {
-                display: table-row;
                 width: 100%;
                 max-width: @page_width;
+                @media @breakpoint_768 {
+                    display: table-row;
+                }
                 .content_left {
-                    display: table-cell;
-                    width: @content_left_width;
+                    width:100%;
                     padding: @content_left_padding;
                     background: @content_left_background;
+                    @media @breakpoint_768 {
+                        display: table-cell;
+                        width: @content_left_width;
+                    }
                 }
                 .content_right {
-                    display: table-cell;
-                    width: @content_right_width;
+                    width:100%;
                     padding: @content_right_padding;
                     background: @content_right_background;
+                    @media @breakpoint_768 {
+                        display: table-cell;
+                        width: @content_right_width;
+                    }
                 }
             }
         }
