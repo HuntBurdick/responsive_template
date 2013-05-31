@@ -126,7 +126,7 @@ body {
             ul {
                 list-style: none;
                 li {
-                    background: #fff;
+                    background: @menu_trigger;
                     .border-radius(10px);
                     width: 50px;
                     height: 4px;
@@ -154,7 +154,7 @@ body {
                 display: table-row;
             }
             a {
-                color:#fff;
+                color: @menu_link;
                 @media @breakpoint_768 {
                     display: table-cell;
                 }
@@ -169,11 +169,12 @@ body {
 .content {
     background: @content_background;
     width:100%;
+    color: @content_text;
     .page_width{
         padding:0px;
         background: @content_page_background;
         .page_table {
-            width:100%;
+            width: 100%;
             max-width: @page_width;
             @media @breakpoint_768 {
                 display: table;

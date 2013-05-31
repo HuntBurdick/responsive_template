@@ -91,7 +91,7 @@ p {
   font-weight: normal;
 }
 body {
-  background: #ff0000;
+  background: #dddddd;
   width: 100%;
 }
 .header {
@@ -120,7 +120,7 @@ body {
   list-style: none;
 }
 .header .page_width .menu_trigger ul li {
-  background: #fff;
+  background: #ffffff;
   -webkit-border-radius: 10px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 10px;
@@ -143,7 +143,7 @@ body {
   }
 }
 .menu .page_width {
-  background: #003ff4;
+  background: #ff0000;
   width: 100%;
 }
 .menu .page_width ul {
@@ -155,7 +155,7 @@ body {
   }
 }
 .menu .page_width ul a {
-  color: #fff;
+  color: #ffffff;
 }
 @media only screen and (min-width: 768px) {
   .menu .page_width ul a {
@@ -168,6 +168,7 @@ body {
 .content {
   background: none;
   width: 100%;
+  color: #666666;
 }
 .content .page_width {
   padding: 0px;
