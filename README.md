@@ -4,4 +4,4 @@ The template requires a LESS compiler to utilize the full features. To configure
 
 The responsive template is meant as a starting point and so is kept as simple as possible beyond the configuration options.
 
-I will be incorporating this as the base template for my other open source project, CMS_Admin, very soon.
+A demo can be seen here: http://blog.websitescenes.com/responsive_template
