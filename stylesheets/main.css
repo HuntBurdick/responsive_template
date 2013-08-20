@@ -72,6 +72,27 @@ p {
   margin: 0;
   padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0px;
+  margin: 0px;
+}
+/* ==========================================================================
+   Table Classes
+   ========================================================================== */
+.table {
+  display: table;
+  width: 100%;
+}
+.table .table_row {
+  display: table-row;
+}
+.table .table_row .table_cell {
+  display: table-cell;
+}
 /* ==========================================================================
    base style additions to html5 boilerplate
    ========================================================================== */
@@ -201,6 +222,7 @@ body {
   .content .page_width .page_table .page_row .content_left {
     display: table-cell;
     width: 30%;
+    vertical-align: top;
   }
 }
 .content .page_width .page_table .page_row .content_right {
@@ -212,6 +234,7 @@ body {
   .content .page_width .page_table .page_row .content_right {
     display: table-cell;
     width: 70%;
+    vertical-align: top;
   }
 }
 .footer {
