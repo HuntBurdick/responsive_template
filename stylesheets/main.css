@@ -226,6 +226,22 @@ body {
     vertical-align: top;
   }
 }
+.content .page_width .page_table .page_row .content_left.large_only {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .content .page_width .page_table .page_row .content_left.large_only {
+    display: table-cell;
+  }
+}
+.content .page_width .page_table .page_row .content_left.small_only {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .content .page_width .page_table .page_row .content_left.small_only {
+    display: none !important;
+  }
+}
 .content .page_width .page_table .page_row .content_middle {
   width: 100%;
   padding: 16px;

@@ -217,6 +217,18 @@ body {
                         width: @content_left_width;
                         vertical-align: top;
                     }
+                    &.large_only {
+                      display: none;
+                      @media @breakpoint_768 {
+                        display: table-cell;
+                      }
+                    }
+                    &.small_only {
+                      display: block;
+                      @media @breakpoint_768 {
+                        display: none !important;
+                      }
+                    }
                 }
                 .content_middle {
                     width:100%;
